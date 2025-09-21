@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hi Abhilasha ❤</title>
+  <style>
+    body {
+      text-align: center;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #d63384;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 50px;
+    }
+    input {
+      padding: 10px;
+      border: 2px solid #ff4d6d;
+      border-radius: 10px;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #ff4d6d;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+    button:hover {
+      background: #e6004c;
+    }
+    .hearts {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+      font-size: 1.2em;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>👀👀 Hi Busy Girl 💖💖 <br> Can you tell me your name? 💕</h1>
+  <div class="hearts">💘💖💝💞💕💗</div>
+  
+  <input type="text" id="nameInput" placeholder="Enter your name 💫">
+  <br>
+  <button onclick="checkName()">💌 Submit</button>
+  <p class="error" id="errorMsg">❌ Oops! Only my princess Abhilasha can enter 💕</p>
+
+  <script>
+    function checkName() {
+      let name = document.getElementById("nameInput").value.trim();
+      if (name.toLowerCase() === "abhilasha") {
+        window.location.href = "message.html";
+      } else {
+        document.getElementById("errorMsg").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
